@@ -99,9 +99,8 @@ We are committed to providing a welcoming and inclusive experience for everyone.
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-```
 
-3. Basic file structure:
+## Basic file structure:
 
 ```
 open-source-web-components/
@@ -125,3 +124,4 @@ open-source-web-components/
 │       └── README.md
 └── assets/
     └── images/
+```
