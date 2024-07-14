@@ -83,4 +83,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Translation
 
-[<img src="https://cdn.statically.io/gh/hjnilsson/country-flags/master/svg/us.svg" height="15">](https://en.wikipedia.org/wiki/English_language) [<img src="https://cdn.statically.io/gh/hjnilsson/country-flags/master/svg/ph.svg" height="15">](https://en.wikipedia.org/wiki/Filipino_language)
+[<img src="https://cdn.statically.io/gh/hjnilsson/country-flags/master/svg/us.svg" height="15">](https://github.com/JohnDev19/Open-Source-Web-Components/README.md) [<img src="https://cdn.statically.io/gh/hjnilsson/country-flags/master/svg/ph.svg" height="15">](https://github.com/JohnDev19/Open-Source-Web-Components/blob/main/translations/Filipino.md)
