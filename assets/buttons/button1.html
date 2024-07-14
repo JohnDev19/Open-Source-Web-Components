@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gradient Button</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">
+  <style>
+    /* DEFAULT CSS DESIGN: BODY, BACK, AND FOOTER */
+    /* YOU CAN CHANGE THE FONT FAMILY AND BACKGROUND COLOR */
+    body {
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(135deg, #1a1a2e, #16213e);
+      font-family: 'Montserrat', Arial, sans-serif;
+    }
+    .back-icon {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      font-size: 40px;
+      color: #fff;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    .back-icon:hover {
+      transform: scale(1.1);
+    }
+    .footer {
+      position: absolute;
+      bottom: 20px;
+      color: white;
+      text-align: center;
+    }
+    .footer a {
+      color: #8946f2;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    .footer a:hover {
+      color: #b07eff;
+    }
+    
+    /* PUT YOUR CSS HERE */
+    .button-wrapper {
+      position: relative;
+      perspective: 1000px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 50px; /* Adjusted border radius */
+      padding: 8px; /* Adjusted padding */
+      backdrop-filter: blur(10px);
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      overflow: hidden;
+    }
+    .button-wrapper::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(45deg, rgba(150,35,252,0.2), rgba(255, 255, 255, 0));
+      opacity: 0.6;
+      z-index: -1;
+    }
+    .button-wrapper:hover {
+      transform: scale(1.05);
+    }
+    .gradient-button {
+      position: relative;
+      padding: 15px 30px;
+      font-size: 20px;
+      font-weight: 600;
+      color: #fff;
+      background: linear-gradient(45deg, #4a00e0, #8e2de2);
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      overflow: hidden;
+      transition: all 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    }
+    .gradient-button::before {
+      content: "";
+      position: absolute;
+      top: -2px;
+      left: -2px;
+      right: -2px;
+      bottom: -2px;
+      background: linear-gradient(45deg, #ff00e0, #00ffff);
+      z-index: -1;
+      filter: blur(10px);
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out, background 0.3s ease-in-out;
+    }
+    .gradient-button:hover {
+      transform: scale(1.05);
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    }
+    .gradient-button:hover::before {
+      opacity: 1;
+      background: linear-gradient(45deg, #00ffff, #ff00e0);
+    }
+    .gradient-button:active {
+      transform: scale(0.95);
+    }
+    .button-text {
+      position: relative;
+      z-index: 1;
+    }
+  </style>
+</head>
+<body>
+  <div class="button-wrapper">
+    <button class="gradient-button">
+      <span class="button-text">Click me!</span>
+    </button>
+  </div>
+  <a href="../../index.html">
+    <!-- Do not update the link to point to the index.html file located outside the assets -->
+    <i class="bi bi-arrow-left-circle back-icon"></i>
+  </a>
+  <div class="footer">
+    <p>
+      Gradient Button developed by<br><a href="https://github.com/JohnDev19/Open-Source-Web-Components" target="_blank">OSWebComponent</a>
+    </p>
+  </div>
+  <script>
+    const button = document.querySelector('.gradient-button');
+    button.addEventListener('mousemove', (e) => {
+      const rect = button.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
+      button.style.setProperty('--x', `${x}px`);
+      button.style.setProperty('--y', `${y}px`);
+    });
+  </script>
+</body>
+</html>
