@@ -5,6 +5,7 @@
   --background-color: #F5F5F5;
   --text-color: #333;
   --light-text-color: #ecf0f1;
+  --accent-color-rgb: 249, 148, 23;
 }
 
 * {
@@ -404,4 +405,95 @@ body {
   margin-top: 30px;
   padding-top: 20px;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Installation section styles */
+.installation {
+    padding: 100px 0;
+    background: linear-gradient(135deg, #f6f9fc 0%, #f1f5f9 100%);
+}
+
+.installation h2 {
+    font-size: 2.8rem;
+    margin-bottom: 60px;
+    text-align: center;
+    color: var(--secondary-color);
+    position: relative;
+}
+
+.installation h2::after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background-color: var(--accent-color);
+}
+
+.installation-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+}
+
+.installation-card {
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    padding: 40px 30px;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.installation-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+.card-content {
+    position: relative;
+    z-index: 1;
+}
+
+.card-icon {
+    font-size: 3rem;
+    color: var(--accent-color);
+    margin-bottom: 25px;
+    transition: all 0.3s ease;
+}
+
+.installation-card h3 {
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+    color: var(--secondary-color);
+}
+
+.installation-card p {
+    font-size: 1rem;
+    color: #6c757d;
+    line-height: 1.6;
+}
+
+.card-number {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 4rem;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.installation-card:hover .card-number {
+    color: var(--accent-color);
+    transform: scale(1.2);
+}
+
+@media (max-width: 768px) {
+    .installation-grid {
+        grid-template-columns: 1fr;
+    }
 }
