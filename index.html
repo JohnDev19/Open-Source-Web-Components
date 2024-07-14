@@ -1,212 +1,332 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Open Source Web Components - Reusable UI Building Blocks</title>
-    <meta name="description" content="Discover and contribute to a collection of open-source web components. Perfect for developers looking for reusable UI building blocks.">
-    <meta name="keywords" content="web components, open source, UI, frontend development, JavaScript">
-    <meta name="author" content="Open Source Web Components Community">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    </head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Open Source Web Components - Reusable UI Building Blocks</title>
+  <meta name="description" content="Discover and contribute to a collection of open-source web components. Perfect for developers looking for reusable UI building blocks.">
+  <meta name="keywords" content="web components, open source, UI, frontend development, JavaScript">
+  <meta name="author" content="Open Source Web Components Community">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
 <body>
-    <nav class="nav">
-        <div class="container nav-container">
-            <div class="logo">OSWebComponents</div>
-            <div class="menu-icon">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-    </nav>
+  <nav class="nav">
+    <div class="container nav-container">
+      <div class="logo">
+        OSWebComponents
+      </div>
+      <div class="menu-icon">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
 
-    <div class="nav-overlay">
-        <ul class="nav-menu">
+  <div class="nav-overlay">
+    <ul class="nav-menu">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#components">Components</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="https://github.com/JohnDev19/Open-Source-Web-Components/">Contribute</a></li>
+    </ul>
+  </div>
+
+  <header class="hero" id="home">
+    <div class="container">
+      <h1 data-aos="fade-down" data-aos-duration="1000">Discover Open Source Web Components</h1>
+      <p data-aos="fade-down" data-aos-duration="2000">
+        Explore our collection of reusable UI building blocks for your next project
+      </p>
+      <div class="search-bar" data-aos="fade-down" data-aos-duration="3000">
+        <input type="text" placeholder="Search components...">
+        <button>Search</button>
+      </div>
+    </div>
+  </header>
+  <section class="marquee-section">
+    <div class="marquee-container">
+      <div class="marquee-content">
+        <span>ELEGANCE IN TIME ✧ CRAFTED WITH PASSION ✧ TIMELESS STYLE ✧ PRECISION ENGINEERING ✧ </span>
+        <span>ELEGANCE IN TIME ✧ CRAFTED WITH PASSION ✧ TIMELESS STYLE ✧ PRECISION ENGINEERING ✧ </span>
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-content">
+        <div class="about-text">
+          <h2 data-aos="fade-down" data-aos-duration="1000">About Our Project</h2>
+          <p data-aos="fade-down" data-aos-duration="2000">
+            Open Source Web Components is a community-driven initiative providing a comprehensive library of reusable, customizable UI elements. Our mission is to empower developers of all skill levels by offering a valuable resource for creating modern, efficient web applications.
+          </p>
+        </div>
+        <div class="about-image" data-aos="fade-down" data-aos-duration="1000">
+          <img src="img/about.png">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="components" id="components">
+    <div class="container">
+      <h2 data-aos="fade-down" data-aos-duration="1000">Web Components</h2>
+      <div class="component-grid">
+        <div class="component-card" data-aos="fade-down" data-aos-duration="1000">
+          <a href="assets/buttons/button1.html">
+            <img src="assets/buttons/buttons-img/button1.jpg" alt="Gradient Button Component">
+          </a>
+          <div class="component-card-content">
+            <h3>Gradient Button</h3>
+            <p>
+              Gradient button with smooth color transitions
+            </p>
+            <div class="tags">
+              <span class="tag">Button</span>
+              <span class="tag">Gradient</span>
+            </div>
+          </div>
+        </div>
+        <div class="component-card" data-aos="fade-down" data-aos-duration="1000">
+          <a href="assets/toggle/toggle1.html">
+            <img src="assets/toggle/toggle-img/toggle1.jpg" alt="Toggle Component">
+          </a>
+          <div class="component-card-content">
+            <h3>3D Basketball Toggle Switch</h3>
+            <p>
+              Switch between basketball-themed modes with this interactive 3D toggle.
+            </p>
+            <div class="tags">
+              <span class="tag">Toggle</span>
+              <span class="tag">Animation</span>
+              <span class="tag">Switch</span>
+            </div>
+          </div>
+        </div>
+        <div class="component-card" data-aos="fade-down" data-aos-duration="1000">
+          <a href="assets/loader/loader1.html">
+            <img src="assets/loader/loader-img/loader1.jpg" alt="Orbital Loader">
+          </a>
+          <div class="component-card-content">
+            <h3>Orbital Loader</h3>
+            <p>
+              Circles pulse and rotate in a continuous loop, offering a captivating loading animation.
+            </p>
+            <div class="tags">
+              <span class="tag">Loader</span>
+              <span class="tag">AnimatedLoader</span>
+              <span class="tag">Loading</span>
+            </div>
+          </div>
+        </div>
+        <div class="component-card" data-aos="fade-down" data-aos-duration="1000">
+          <a href="assets/carousel/carousel1.html">
+            <img src="assets/carousel/carousel-img/carousel1.jpg" alt="Carousel Component">
+          </a>
+          <div class="component-card-content">
+            <h3>Carousel</h3>
+            <p>
+              A carousel with smooth transitions and fading effects. Perfect for showcasing your best content with style.
+            </p>
+            <div class="tags">
+              <span class="tag">Gallery</span>
+              <span class="tag">Slider</span>
+              <span class="tag">Carousel</span>
+            </div>
+          </div>
+        </div>
+        <div class="component-card" data-aos="fade-down" data-aos-duration="1000">
+          <a href="assets/cards/card1.html">
+            <img src="assets/cards/cards-img/card1.jpg" alt="Futuristic Card">
+          </a>
+          <div class="component-card-content">
+            <h3>Futurustic Card</h3>
+            <p>
+              Futuristic card, the cutting-edge interface design for the next generation of digital experiences.
+            </p>
+            <div class="tags">
+              <span class="tag">Card</span>
+              <span class="tag">Futuristic</span>
+              <span class="tag">UI</span>
+            </div>
+          </div>
+        </div>
+        <div class="component-card" data-aos="fade-down" data-aos-duration="1000">
+          <a href="assets/inputs/search_input.html">
+            <img src="assets/inputs/inputs-img/search_input1.jpg" alt="Input Form Component">
+          </a>
+          <div class="component-card-content">
+            <h3>Input Search Bar</h3>
+            <p>
+              Stylish search bar with gradient effects and clear, user-friendly interface
+            </p>
+            <div class="tags">
+              <span class="tag">InputField</span>
+              <span class="tag">SearchBar</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="no-results" style="display: none;" data-aos="fade-down">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          <line x1="11" y1="8" x2="11" y2="14"></line>
+          <line x1="8" y1="11" x2="14" y2="11"></line>
+        </svg>
+        <p>
+          No results found
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="installation" id="installation">
+    <div class="container">
+      <h2 data-aos="fade-down" data-aos-duration="1000">Installation Guide</h2>
+      <div class="installation-grid">
+        <div class="installation-card" data-aos="fade-up" data-aos-duration="1000">
+          <div class="card-content">
+            <div class="card-icon">
+              <i class="bi bi-download"></i>
+            </div>
+            <h3>Download</h3>
+            <p>
+              Clone or download the repository from GitHub to your local machine.
+            </p>
+          </div>
+          <div class="card-number">
+            01
+          </div>
+        </div>
+        <div class="installation-card" data-aos="fade-up" data-aos-duration="1200">
+          <div class="card-content">
+            <div class="card-icon">
+              <i class="bi bi-folder2-open"></i>
+            </div>
+            <h3>Navigate</h3>
+            <p>
+              Open your terminal and navigate to the project directory.
+            </p>
+          </div>
+          <div class="card-number">
+            02
+          </div>
+        </div>
+        <div class="installation-card" data-aos="fade-up" data-aos-duration="1400">
+          <div class="card-content">
+            <div class="card-icon">
+              <i class="bi bi-gear"></i>
+            </div>
+            <h3>Dependencies</h3>
+            <p>
+              Install necessary dependencies using npm or yarn.
+            </p>
+          </div>
+          <div class="card-number">
+            03
+          </div>
+        </div>
+        <div class="installation-card" data-aos="fade-up" data-aos-duration="1600">
+          <div class="card-content">
+            <div class="card-icon">
+              <i class="bi bi-play-circle"></i>
+            </div>
+            <h3>Run</h3>
+            <p>
+              Start the development server and open the project in your browser.
+            </p>
+          </div>
+          <div class="card-number">
+            04
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="footer" id="contact">
+    <div class="container">
+      <div class="footer-content" data-aos="fade-down" data-aos-duration="1000">
+        <div class="footer-section">
+          <h3>Open Source Web Components</h3>
+          <p>
+            Empowering developers with reusable UI building blocks.
+          </p>
+        </div>
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul class="footer-links">
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#components">Components</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </div>
-
-    <header class="hero" id="home">
-        <div class="container">
-            <h1 data-aos="fade-down" data-aos-duration="1000">Discover Open Source Web Components</h1>
-            <p data-aos="fade-down" data-aos-duration="2000">Explore our collection of reusable UI building blocks for your next project</p>
-            <div class="search-bar" data-aos="fade-down" data-aos-duration="3000">
-                <input type="text" placeholder="Search components...">
-                <button>Search</button>
-            </div>
+            <li><a href="https://github.com/your-username/open-source-web-components" target="_blank">GitHub</a></li>
+          </ul>
         </div>
-    </header><section class="marquee-section">
-  <div class="marquee-container">
-    <div class="marquee-content">
-      <span>ELEGANCE IN TIME ✧ CRAFTED WITH PASSION ✧ TIMELESS STYLE ✧ PRECISION ENGINEERING ✧ </span>
-      <span>ELEGANCE IN TIME ✧ CRAFTED WITH PASSION ✧ TIMELESS STYLE ✧ PRECISION ENGINEERING ✧ </span>
-    </div>
-  </div>
-</section>
-
-    <section class="about" id="about">
-    <div class="container">
-        <div class="about-content">
-            <div class="about-text">
-                <h2 data-aos="fade-down" data-aos-duration="1000">About Our Project</h2>
-                <p data-aos="fade-down" data-aos-duration="2000">Open Source Web Components is a community-driven initiative providing a comprehensive library of reusable, customizable UI elements. Our mission is to empower developers of all skill levels by offering a valuable resource for creating modern, efficient web applications.</p>
-            </div>
-            <div class="about-image" data-aos="fade-down" data-aos-duration="1000">
-                <img src="img/about.png">
-            </div>
+        <div class="footer-section">
+          <h3>Authors</h3>
+          <p>
+            OSWebComponents
+          </p>
+          <p>
+            JohnDev19
+          </p>
         </div>
-    </div>
-</section>
-
-<section class="components" id="components">
-    <div class="container">
-        <h2 data-aos="fade-down" data-aos-duration="1000">Web Components</h2>
-        <div class="component-grid">
-            <div class="component-card" data-aos="fade-down" data-aos-duration="1000">
-                <a href="assets/buttons/button1.html">
-                    <img src="assets/buttons/buttons-img/button1.jpg" alt="Gradient Button Component">
-                </a>
-                <div class="component-card-content">
-                    <h3>Gradient Button</h3>
-                    <p>Gradient button with smooth color transitions</p>
-                    <div class="tags">
-                        <span class="tag">Button</span>
-                        <span class="tag">Gradient</span>
-                    </div>
-                </div>
-            </div>
-            <div class="component-card" data-aos="fade-down" data-aos-duration="1000">
-                <a href="assets/toggle/toggle1.html">
-                    <img src="assets/toggle/toggle-img/toggle1.jpg" alt="Toggle Component">
-                </a>
-                <div class="component-card-content">
-                    <h3>3D Basketball Toggle Switch</h3>
-                    <p>Switch between basketball-themed modes with this interactive 3D toggle.</p>
-                    <div class="tags">
-                        <span class="tag">Toggle</span>
-                        <span class="tag">Animation</span>
-                        <span class="tag">Switch</span>
-                    </div>
-                </div>
-            </div>
-            <div class="component-card" data-aos="fade-down" data-aos-duration="1000">
-                <a href="assets/loader/loader1.html">
-                    <img src="assets/loader/loader-img/loader1.jpg" alt="Orbital Loader">
-                </a>
-                <div class="component-card-content">
-                    <h3>Orbital Loader</h3>
-                    <p>Circles pulse and rotate in a continuous loop, offering a captivating loading animation.</p>
-                    <div class="tags">
-                        <span class="tag">Loader</span>
-                        <span class="tag">AnimatedLoader</span>
-                        <span class="tag">Loading</span>
-                    </div>
-                </div>
-            </div>
-            <div class="component-card" data-aos="fade-down" data-aos-duration="1000">
-                <a href="assets/carousel/carousel1.html">
-                    <img src="assets/carousel/carousel-img/carousel1.jpg" alt="Carousel Component">
-                </a>
-                <div class="component-card-content">
-                    <h3>Carousel</h3>
-                    <p>A carousel with smooth transitions and fading effects. Perfect for showcasing your best content with style.</p>
-                    <div class="tags">
-                        <span class="tag">Gallery</span>
-                        <span class="tag">Slider</span>
-                        <span class="tag">Carousel</span>
-                    </div>
-                </div>
-            </div>
-            <div class="component-card" data-aos="fade-down" data-aos-duration="1000">
-                <a href="assets/cards/card1.html">
-                    <img src="assets/cards/cards-img/card1.jpg" alt="Futuristic Card">
-                </a>
-                <div class="component-card-content">
-                    <h3>Futurustic Card</h3>
-                    <p>Futuristic card, the cutting-edge interface design for the next generation of digital experiences.</p>
-                    <div class="tags">
-                        <span class="tag">Card</span>
-                        <span class="tag">Futuristic</span>
-                        <span class="tag">UI</span>
-                    </div>
-                </div>
-            </div>
-            <div class="component-card" data-aos="fade-down" data-aos-duration="1000">
-                <a href="assets/inputs/search_input.html">
-                    <img src="assets/inputs/inputs-img/search_input1.jpg" alt="Input Form Component">
-                </a>
-                <div class="component-card-content">
-                    <h3>Input Search Bar</h3>
-                    <p>Stylish search bar with gradient effects and clear, user-friendly interface</p>
-                    <div class="tags">
-                        <span class="tag">InputField</span>
-                        <span class="tag">SearchBar</span>
-                    </div>
-                </div>
-            </div>
+        <div class="footer-section">
+          <h3>Follow Us</h3>
+          <div class="social-icons">
+            <a href="https://github.com/JohnDev19/Open-Source-Web-Components" target="_blank" aria-label="GitHub"><i class="bi bi-github"></i></a>
+            <a href="#" target="_blank" aria-label="Twitter"><i class="bi bi-twitter"></i></a>
+            <a href="#" target="_blank" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+          </div>
         </div>
-        <div id="no-results" style="display: none;" data-aos="fade-down">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <circle cx="11" cy="11" r="8"></circle>
-                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-                    <line x1="11" y1="8" x2="11" y2="14"></line>
-                    <line x1="8" y1="11" x2="14" y2="11"></line>
-                </svg>
-                <p>No results found</p>
-            </div>
+      </div>
+      <div class="footer-bottom">
+        <p>
+          &copy; 2024 Open Source Web Components. All rights reserved.
+        </p>
+      </div>
     </div>
-</section>
+  </footer>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
+  <script src="https://kit.fontawesome.com/your-font-awesome-kit.js" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/your-font-awesome-kit.js" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault();
 
-    <footer class="footer" id="contact">
-        <div class="container">
-            <div class="footer-content" data-aos="fade-down" data-aos-duration="1000">
-                <div class="footer-section">
-                    <h3>Open Source Web Components</h3>
-                    <p>Empowering developers with reusable UI building blocks.</p>
-                </div>
-                <div class="footer-section">
-                    <h3>Quick Links</h3>
-                    <ul class="footer-links">
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#components">Components</a></li>
-                        <li><a href="https://github.com/your-username/open-source-web-components" target="_blank">GitHub</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h3>Authors</h3>
-                    <p>OSWebComponents</p>
-                    <p>JohnDev19</p>
-                </div>
-                <div class="footer-section">
-                    <h3>Follow Us</h3>
-                    <div class="social-icons">
-                        <a href="https://github.com/JohnDev19/Open-Source-Web-Components" target="_blank" aria-label="GitHub"><i class="bi bi-github"></i></a>
-                        <a href="#" target="_blank" aria-label="Twitter"><i class="bi bi-twitter"></i></a>
-                        <a href="#" target="_blank" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 Open Source Web Components. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+          const target = document.querySelector(this.getAttribute('href'));
 
-    <script src="https://kit.fontawesome.com/your-font-awesome-kit.js" crossorigin="anonymous"></script>
-    <script src="https://kit.fontawesome.com/your-font-awesome-kit.js" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
+          if (target) {
+            const navbar = document.querySelector('.nav');
+            const navbarHeight = navbar ? navbar.offsetHeight: 0;
+
+            window.scrollTo({
+              top: target.offsetTop - navbarHeight,
+              behavior: 'smooth'
+            });
+
+            const navOverlay = document.querySelector('.nav-overlay');
+            const menuIcon = document.querySelector('.menu-icon');
+            if (navOverlay && navOverlay.classList.contains('active')) {
+              navOverlay.classList.remove('active');
+              menuIcon.classList.remove('active');
+            }
+          }
+        });
+      });
+    });
+  </script>
 </body>
 </html>
