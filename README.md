@@ -8,6 +8,8 @@
 
 A collection of simple web components (e.g., buttons, forms, carousels) that beginners can improve or create new components for.
 
+<img src="img/IMG_20240715_071002.jpg">
+
 ## Table of Contents
 
 - [Introduction](#introduction)
