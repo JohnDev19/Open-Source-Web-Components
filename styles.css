@@ -124,7 +124,7 @@ body {
 }
 
 .hero h1 {
-  font-size: 3.4rem;
+  font-size: 2.9rem;
   margin-bottom: 20px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -151,7 +151,7 @@ body {
 }
 
 .search-bar button {
-  padding: 15px 30px;
+  padding: 15px 10px;
   font-size: 1rem;
   background-color: var(--accent-color);
   color: var(--light-text-color);
