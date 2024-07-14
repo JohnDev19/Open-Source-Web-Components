@@ -6,15 +6,14 @@ A collection of simple web components (e.g., buttons, forms, carousels) that beg
 
 - [Introduction](#introduction)
 - [Getting Started](#getting-started)
-- [Available Components](#available-components)
 - [Contributing](#contributing)
 - [Code of Conduct](#code-of-conduct)
 - [License](#license)
+- [Translate](#translate)
 
 ## Introduction
 
 Open Source Web Components is a community-driven project aimed at providing a library of reusable, customizable web components. Our goal is to create a learning environment for beginners while also building a valuable resource for developers of all skill levels.
-
 
 ## Getting Started
 
@@ -26,49 +25,31 @@ Open Source Web Components is a community-driven project aimed at providing a li
 ### Installation
 
 1. Clone the repository:
-   ```
+   ```sh
    git clone https://github.com/JohnDev19/open-source-web-components.git
    ```
 
 2. Navigate to the project directory:
-   ```
+   ```sh
    cd open-source-web-components
    ```
 
 3. Open the `index.html` file in your browser to see the component showcase.
 
-### Usage
+### Adding New Web Components
 
-To use a component in your project, copy the relevant HTML, CSS, and JavaScript files from the component's directory to your project. Then, import the component in your HTML file:
+To add new web components to the project, follow these steps:
 
-```html
-<script type="module" src="path/to/component.js"></script>
-```
+1. Copy the `template.html` file from the root directory:
+   ```sh
+   cp template.html components/your-component-name.html
+   ```
 
-You can then use the component in your HTML:
+2. Rename `your-component-name.html` to a unique name that describes your component.
 
-```html
-<custom-button>Click me!</custom-button>
-```
+3. Add your HTML, CSS, and JavaScript for the new component within this file. Ensure your CSS and JavaScript are directly included in the template file for ease of use.
 
-## Available Components
-
-Here's a list of currently available components:
-
-1. Button (`<custom-button>`)
-2. Input Form (`<custom-form>`)
-3. Carousel (`<custom-carousel>`)
-
-Each component has its own directory with the following structure:
-
-```
-component-name/
-├── component-name.js
-├── component-name.css
-└── README.md
-```
-
-Refer to each component's README for specific usage instructions and customization options.
+4. If your component uses images, add them to the appropriate directory within `assets` (e.g., `assets/buttons/buttons-img` for button images) and reference them appropriately in your HTML.
 
 ## Contributing
 
@@ -100,28 +81,6 @@ We are committed to providing a welcoming and inclusive experience for everyone.
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## Basic file structure:
+## Translation
 
-```
-open-source-web-components/
-├── README.md
-├── LICENSE
-├── CODE_OF_CONDUCT.md
-├── CONTRIBUTING.md
-├── index.html
-├── components/
-│   ├── button/
-│   │   ├── button.js
-│   │   ├── button.css
-│   │   └── README.md
-│   ├── form/
-│   │   ├── form.js
-│   │   ├── form.css
-│   │   └── README.md
-│   └── carousel/
-│       ├── carousel.js
-│       ├── carousel.css
-│       └── README.md
-└── assets/
-    └── images/
-```
+[<img src="https://cdn.statically.io/gh/hjnilsson/country-flags/master/svg/us.svg" height="15">](https://en.wikipedia.org/wiki/English_language) [<img src="https://cdn.statically.io/gh/hjnilsson/country-flags/master/svg/ph.svg" height="15">](https://en.wikipedia.org/wiki/Filipino_language)
