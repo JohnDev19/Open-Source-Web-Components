@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advanced 3D Basketball Toggle Switch</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">
+  <style>
+:root {
+    --switch-width: 300px;
+    --switch-height: 120px;
+    --container-padding: 20px;
+    --ball-size: 100px;
+    --off-color: #3a3a3a;
+    --on-color: #4cd964;
+  }
+
+    body {
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background: linear-gradient(360deg, #f85, #16213e);
+      align-items: center;
+      font-family: 'Poppins', Arial, sans-serif;
+    }
+
+    .back-icon {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      font-size: 40px;
+      color: #fff;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    .back-icon:hover {
+      transform: scale(1.1);
+    }
+    .footer {
+      position: absolute;
+      bottom: 20px;
+      color: white;
+      text-align: center;
+    }
+    .footer a {
+      color: #8946f2;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    .footer a:hover {
+      color: #b07eff;
+    }
+
+    /* ADD YOUR CSS HERE */
+
+    .switch-outer-container {
+      width: calc(var(--switch-width) + var(--container-padding) * 2);
+      height: calc(var(--switch-height) + var(--container-padding) * 2);
+      background: linear-gradient(145deg, #d0d0d0, #f5f5f5);
+      border-radius: calc(var(--switch-height) / 2 + var(--container-padding));
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      perspective: 1000px;
+    }
+
+    .switch-container {
+      width: var(--switch-width);
+      height: var(--switch-height);
+      position: relative;
+      background: var(--off-color);
+      border-radius: calc(var(--switch-height) / 2);
+      overflow: hidden;
+      transition: background 0.5s ease;
+    }
+
+    .switch {
+      width: 100%;
+      height: 100%;
+      position: relative;
+    }
+
+    .switch-track {
+      position: absolute;
+      width: calc(100% - 20px);
+      height: calc(100% - 20px);
+      top: 10px;
+      left: 10px;
+      background: linear-gradient(145deg, #333, #444);
+      border-radius: calc((var(--switch-height) - 20px) / 2);
+      overflow: hidden;
+    }
+
+    #toggle {
+      display: none;
+    }
+
+    .basketball {
+      position: absolute;
+      width: var(--ball-size);
+      height: var(--ball-size);
+      top: calc((var(--switch-height) - var(--ball-size)) / 2);
+      left: 10px;
+      transition: transform 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+
+    .basketball-inner {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      background: #f85;
+      position: relative;
+      overflow: hidden;
+      box-shadow:
+      inset -5px -5px 15px rgba(0,0,0,0.5),
+      inset 5px 5px 15px rgba(255,255,255,0.3);
+    }
+
+    .basketball-inner::before,
+    .basketball-inner::after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+    }
+
+    .basketball-inner::before {
+      background:
+      radial-gradient(circle at 30% 30%, rgba(255,255,255,0.4) 0%, transparent 10%);
+    }
+
+    .basketball-inner::after {
+      background:
+      linear-gradient(90deg, transparent 49%, #000 49%, #000 51%, transparent 51%),
+      linear-gradient(0deg, transparent 49%, #000 49%, #000 51%, transparent 51%),
+      linear-gradient(45deg, transparent 49%, #000 49%, #000 51%, transparent 51%),
+      linear-gradient(-45deg, transparent 49%, #000 49%, #000 51%, transparent 51%);
+      opacity: 0.15;
+    }
+
+    #toggle:checked ~ .switch .basketball {
+      transform: translateX(calc(var(--switch-width) - var(--ball-size) - 20px));
+    }
+
+    #toggle:checked ~ .switch-container {
+      background: var(--on-color);
+    }
+
+    @keyframes roll {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="switch-outer-container">
+    <div class="switch-container">
+      <input type="checkbox" id="toggle">
+      <label for="toggle" class="switch">
+        <div class="switch-track"></div>
+        <div class="basketball">
+          <div class="basketball-inner"></div>
+        </div>
+      </label>
+    </div>
+  </div>
+
+  <a href="../../index.html">
+    <!-- Do not update the link to point to the index.html file located outside the assets -->
+    <i class="bi bi-arrow-left-circle back-icon"></i>
+  </a>
+  <div class="footer">
+    <p>
+      Carousel developed by<br><a href="https://github.com/JohnDev19/Open-Source-Web-Components" target="_blank">OSWebComponent</a>
+    </p>
+  </div>
+
+  <script>
+    const toggle = document.getElementById('toggle');
+    const basketball = document.querySelector('.basketball');
+    const basketballInner = document.querySelector('.basketball-inner');
+
+    toggle.addEventListener('change', () => {
+      const distance = toggle.checked ?
+      'calc(var(--switch-width) - var(--ball-size) - 20px)': '0px';
+
+      basketball.style.transform = `translateX(${distance})`;
+      basketballInner.style.animation = 'roll 0.5s linear';
+
+      setTimeout(() => {
+        basketballInner.style.animation = 'none';
+      }, 500);
+    });
+  </script>
+</body>
+</html>
