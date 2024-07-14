@@ -1,3 +1,9 @@
+## Isalin
+
+[<img src="https://cdn.statically.io/gh/hjnilsson/country-flags/master/svg/us.svg" height="15">](https://github.com/JohnDev19/Open-Source-Web-Components/blob/main/README.md) [<img src="https://cdn.statically.io/gh/hjnilsson/country-flags/master/svg/ph.svg" height="15">](https://github.com/JohnDev19/Open-Source-Web-Components/blob/main/translations/Filipino.md)
+
+-------------
+
 # Open Source Web Components
 
 Isang koleksyon ng simpleng mga web component (hal., mga button, form, carousel) na maaaring mapabuti ng mga beginners o lumikha ng mga bagong component.
@@ -80,8 +86,4 @@ Nangangako kami na magbibigay ng isang maaliwalas at kasaliang karanasan para sa
 ## Lisensya
 
 Ang proyektong ito ay lisensyado sa ilalim ng MIT License - tingnan ang [LICENSE](LICENSE) file para sa mga detalye.
-
-## Isalin
-
-[<img src="https://cdn.statically.io/gh/hjnilsson/country-flags/master/svg/us.svg" height="15">](https://tl.wikipedia.org/wiki/Ingles_na_wika) [<img src="https://cdn.statically.io/gh/hjnilsson/country-flags/master/svg/ph.svg" height="15">](https://tl.wikipedia.org/wiki/Filipino_wika)
 
