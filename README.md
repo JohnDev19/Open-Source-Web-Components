@@ -1,3 +1,9 @@
+## Translation
+
+[<img src="https://cdn.statically.io/gh/hjnilsson/country-flags/master/svg/us.svg" height="15">](https://github.com/JohnDev19/Open-Source-Web-Components/blob/main/README.md) [<img src="https://cdn.statically.io/gh/hjnilsson/country-flags/master/svg/ph.svg" height="15">](https://github.com/JohnDev19/Open-Source-Web-Components/blob/main/translations/Filipino.md)
+
+-------------
+
 # Open Source Web Components
 
 A collection of simple web components (e.g., buttons, forms, carousels) that beginners can improve or create new components for.
@@ -9,7 +15,6 @@ A collection of simple web components (e.g., buttons, forms, carousels) that beg
 - [Contributing](#contributing)
 - [Code of Conduct](#code-of-conduct)
 - [License](#license)
-- [Translate](#translate)
 
 ## Introduction
 
@@ -81,6 +86,3 @@ We are committed to providing a welcoming and inclusive experience for everyone.
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## Translation
-
-[<img src="https://cdn.statically.io/gh/hjnilsson/country-flags/master/svg/us.svg" height="15">](https://github.com/JohnDev19/Open-Source-Web-Components/blob/main/README.md) [<img src="https://cdn.statically.io/gh/hjnilsson/country-flags/master/svg/ph.svg" height="15">](https://github.com/JohnDev19/Open-Source-Web-Components/blob/main/translations/Filipino.md)
